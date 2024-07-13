@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Outfit;
+}
+#root{
+  min-height: 100vh;
+  display: flex;
+  animation: fadeIn 1.5s ;
+}
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+body {
+  background-color: white;
+  color: black;
+}
+
+.sidebar {
+  background-color: #f4f4f4;
+  color: black;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+body.dark-mode .main .card {
+  background-color: #1e1e1e;
+}
+body.dark-mode .main .card p {
+  color: white;
+}
+body.dark-mode .main .main-bottom .search-box{
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .sidebar {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.body.dark-mode .sidebar .recent-entry {
+  color: white;
+}
+/* Dark Mode Toggle Button Styles */
+.dark-mode-toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.dark-mode-toggle img {
+  margin-right: 8px;
+}
+
+.dark-mode-toggle p {
+  margin: 0;
+}
